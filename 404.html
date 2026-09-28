@@ -1,0 +1,150 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="The page you were looking for could not be found." />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Page Not Found | Gabless Healthcare Consulting</title>
+
+    
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet" />
+
+    <style>
+      /* Self-contained on purpose. A 404 can be served from any URL depth,
+         so relative stylesheet paths are unreliable here. */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        font-family: "Poppins", Arial, sans-serif;
+        background: linear-gradient(135deg, #f6fbff 0%, #e8f2fb 100%);
+        color: #2c2d3f;
+        text-align: center;
+      }
+      .wrap {
+        max-width: 560px;
+      }
+      .wordmark {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        color: #2c2d3f;
+        margin: 0 0 40px;
+      }
+      .wordmark span {
+        color: #1a76d1;
+      }
+      .code {
+        font-size: 84px;
+        line-height: 1;
+        font-weight: 700;
+        color: #1a76d1;
+        margin: 0 0 10px;
+      }
+      h1 {
+        font-size: 26px;
+        font-weight: 600;
+        margin: 0 0 16px;
+      }
+      p {
+        color: #868686;
+        font-size: 15px;
+        line-height: 1.7;
+        margin: 0 0 32px;
+      }
+      .actions {
+        display: flex;
+        gap: 14px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .btn {
+        display: inline-block;
+        padding: 14px 32px;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border: 1px solid #1a76d1;
+      }
+      .btn-primary {
+        background: #1a76d1;
+        color: #fff;
+      }
+      .btn-primary:hover {
+        background: #155fa8;
+        border-color: #155fa8;
+      }
+      .btn-outline {
+        background: transparent;
+        color: #1a76d1;
+      }
+      .btn-outline:hover {
+        background: #1a76d1;
+        color: #fff;
+      }
+      @media (max-width: 480px) {
+        .code {
+          font-size: 62px;
+        }
+        h1 {
+          font-size: 21px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <p class="wordmark">Gabless<span>.</span></p>
+
+      <p class="code">404</p>
+      <h1>We couldn't find that page</h1>
+      <p>
+        The page may have been moved or removed, or the address might have a
+        typo in it. Let's get you back on track.
+      </p>
+
+      <div class="actions">
+        <a href="/index.html" id="home-link" class="btn btn-primary">Back to Homepage</a>
+        <a href="/pages/contact.html" id="contact-link" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+
+    <script>
+      /* A 404 can be served for any URL, and on GitHub Pages project sites the
+         whole site sits under /<repo-name>/ rather than the domain root. Work
+         out that base prefix from the current path so these links resolve
+         correctly on both a custom domain and a project subfolder deploy. */
+      (function () {
+        var parts = window.location.pathname.split("/").filter(Boolean);
+        var base = "/";
+
+        // On *.github.io the first path segment is the repository name.
+        if (window.location.hostname.endsWith("github.io") && parts.length) {
+          base = "/" + parts[0] + "/";
+        }
+
+        document.getElementById("home-link").href = base + "index.html";
+        document.getElementById("contact-link").href = base + "pages/contact.html";
+      })();
+    </script>
+  </body>
+</html>

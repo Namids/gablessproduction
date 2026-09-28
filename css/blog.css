@@ -1,0 +1,154 @@
+/* =====================================================================
+   Blog additions
+   ---------------------------------------------------------------------
+   The template shipped full CSS for .blog / .news-single / .main-sidebar
+   (see style.css) but no page ever used it. These rules only cover the
+   handful of things that CSS didn't already provide: the "Read more"
+   link, the sidebar contact CTA, empty-state copy, and the working
+   social share buttons on post pages.
+   ===================================================================== */
+
+.blog .single-news .read-more {
+  display: inline-block;
+  margin-top: 6px;
+  color: #1a76d1;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.blog .single-news .read-more i {
+  margin-left: 4px;
+  font-size: 12px;
+  transition: transform 0.25s ease;
+}
+
+.blog .single-news .read-more:hover i {
+  transform: translateX(4px);
+}
+
+.more-articles-note {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-top: 30px;
+  padding: 22px 26px;
+  background: #f6fbff;
+  border: 1px dashed #cfe3f5;
+  border-radius: 8px;
+  color: #868686;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.more-articles-note i {
+  flex-shrink: 0;
+  margin-top: 3px;
+  font-size: 20px;
+  color: #1a76d1;
+}
+
+.more-articles-note a {
+  color: #1a76d1;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.main-sidebar .cta-widget {
+  text-align: center;
+  background: linear-gradient(135deg, #1a76d1 0%, #1552a0 100%) !important;
+}
+
+.main-sidebar .cta-widget .title {
+  color: #fff;
+  padding-left: 0;
+}
+
+.main-sidebar .cta-widget .title::before {
+  display: none;
+}
+
+.main-sidebar .cta-widget p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.main-sidebar .cta-widget .btn {
+  background: #fff;
+  color: #1a76d1;
+  border: none;
+}
+
+.main-sidebar .cta-widget .btn:hover {
+  background: #2c2d3f;
+  color: #fff;
+}
+
+/* Working share links (real URLs, no API keys needed) */
+.news-single .social-share {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-single .social-share li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 15px;
+  transition: opacity 0.25s ease;
+}
+
+.news-single .social-share li a:hover {
+  opacity: 0.85;
+}
+
+.news-single .social-share li.linkedin a {
+  background: #0a66c2;
+}
+
+.news-single .social-share li.twitter a {
+  background: #14171a;
+}
+
+.news-single .social-share li.whatsapp a {
+  background: #25d366;
+}
+
+.news-single .social-share li.email a {
+  background: #1a76d1;
+}
+
+/* Author byline on post pages (no CMS, so this is set per article, not
+   pulled from a database) */
+.news-single .meta-left .author img {
+  object-fit: cover;
+}
+
+.news-single .cta-block {
+  margin-top: 35px;
+  padding: 35px;
+  text-align: center;
+  background: #f6fbff;
+  border: 1px solid #e4eef7;
+  border-radius: 8px;
+}
+
+.news-single .cta-block h4 {
+  font-size: 19px;
+  font-weight: 600;
+  color: #2c2d3f;
+  margin-bottom: 10px;
+}
+
+.news-single .cta-block p {
+  color: #868686;
+  margin-bottom: 20px;
+}
