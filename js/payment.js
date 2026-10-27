@@ -9,8 +9,8 @@
       btn: "Pay ",
     },
     support: {
-      title: "Support Gabless Healthcare Consulting",
-      text: "Your support helps us expand healthcare innovation, training and digital transformation across Africa.",
+      title: "Support / Donate to Gabless Healthcare Consulting",
+      text: "Your support and donation help us expand healthcare innovation, training and digital transformation across Nigeria and Africa.",
       note: 'Use "Support" as the transfer reference.',
       label: "Support",
       btn: "Give ",
